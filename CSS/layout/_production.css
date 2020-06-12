@@ -1,0 +1,14 @@
+/*La barre de scroll */
+#production{
+    overflow-y: scroll;
+    height: 100vh;
+    background: linear-gradient(#0b0b0be7,#0b0b0b0e, #0b0b0b00,#0b0b0b00);    
+}
+
+hr {
+    margin-top: 15px;
+    background-color: brown;
+    background-image: url("/assets/images/panel-horizontal.png");
+    height: 16px;
+    
+}

@@ -1,0 +1,63 @@
+#bakery{
+    background: linear-gradient(#0b0b0be7,#0b0b0b31, #0b0b0be7);
+    /* inserer ligne andreia pour le dégradé du fond qui est le meme que le strore */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cookies{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.568); 
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cookiesStock{
+    font-size: 2em;
+}
+#cookiesPerSecond{
+    font-size: 1em;
+}
+
+#bigCookie{
+    height: 225px;
+    width: 225px;
+    border-radius: 100%;
+    background-image: url("/assets/images/perfect-cookie.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 225px;
+    filter: drop-shadow(0 0 1rem #ffffff);   
+    cursor:pointer;
+    position: relative;
+}
+
+#bigCookie:hover{
+    background-size: 250px;
+}
+#bigCookie:active{
+    background-size: 213px;
+}
+
+#bigCookie .up{
+font-size: 21px;
+font-weight: bold;
+position: absolute;
+margin-top: -140px;
+margin-left: -95px;
+animation-name: up;
+animation-duration: 3s;
+}
+
+
+@keyframes up {
+    0%   { opacity:1;  top:200px;}
+    20% { opacity: 0.5; }
+    50% { opacity: 0.2; }
+    100% { opacity: 0; top:0px; }
+  }
+
+ 

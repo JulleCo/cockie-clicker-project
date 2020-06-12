@@ -1,0 +1,126 @@
+#store {
+  overflow-y: scroll;
+  background: linear-gradient(#0b0b0be7,#0b0b0b31, #0b0b0be7);
+}
+
+#buildings{
+  background-color: brown;
+  background: url("/assets/images/panel-horizontal.png") no-repeat;
+  margin-top: 15px;
+  min-height: 16px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+
+#buildings::before{
+content: "Buildings";
+font-size: 11px;
+font-weight: bold;
+text-transform: uppercase;
+text-shadow: 0px 0px 4px #000000, 0px 1px 4px #000000; 
+opacity: 0;
+margin-top: -16px;
+padding: 2px;
+}
+
+#buildings:hover::before{
+  opacity: 1;
+  transition: 0.75s;
+}
+
+#buildings > div {
+  background-image: url('/assets/images/store-tile.jpg');
+  height: 10vh;
+  cursor:pointer;
+  position: relative;
+}
+
+#buildings > div:hover {
+  box-shadow: inset 0px 0px 15px 3px #ffffff;
+  transition : 0.5s ;
+}
+
+#buildings > .enabled:active {
+  box-shadow: inset 0px 0px 15px 3px #000000;
+  transition : 0.5s ;
+}
+
+
+.name {
+  font-size: 21px;
+  position: absolute ;
+  top: 15% ;
+  left : 23%;
+}
+
+.name , .cost {
+  font-weight: bold;
+  text-shadow: 0px 0px 4px #000000,0px 1px 4px #000000; 
+}
+
+.cost{
+  position: absolute;
+  bottom: 15%;
+  left : 23% ;
+  background: url('/assets/images/money.png') no-repeat top left;
+  font-size: 11.2px;
+  color: #66ff66;
+  height: 3vh;
+  padding-left: 25px;
+}
+
+.disabled .cost {
+  color: #ff6666;
+}
+
+#buildings .disabled::after{
+  content: '';
+  background-color: black;
+  opacity : 0.5;
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.locked .icon {
+  background-image: url('/assets/images/buildings.png');
+  background-position-x: 34%;
+  height: 10vh;
+  width: 4.5vw;
+}
+
+.unlocked .icon {
+  background-image: url('/assets/images/buildings.png');
+  background-position-x: 0%;
+  height: 10vh;
+  width: 4.5vw;
+}
+
+#building-cursor .icon {
+  background-position-y: 0%;
+}
+#building-grandma .icon {
+  background-position-y: 5.9%;
+}
+#building-farm .icon {
+  background-position-y: 17.5%;
+}
+#building-mine .icon {
+  background-position-y: 23.5%;
+}
+#building-factory .icon {
+  background-position-y: 29.4%;
+}
+
+.number {
+  position:absolute;
+  font-size: 30px;
+  font-weight: bold;
+  color:rgba(49, 45, 45, 0.479);
+  right:10px;
+  top:15px;
+}
+
