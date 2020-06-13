@@ -13,4 +13,4 @@ Difficile d'expliquer comment fonctionne le jeu, il suffit de cliquer sur le coo
 
 <br>
 <br>
-Projet réalisé en équipe avec <a href='https://github.com/AndreiaPena'> Andreia </a> et Samira <a href='https://github.com/TAJIK-samira'>
+Projet réalisé en équipe avec <a href='https://github.com/AndreiaPena'> Andreia </a> et <a href='https://github.com/TAJIK-samira'>Samira</a>.
